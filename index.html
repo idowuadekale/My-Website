@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My | Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="">
+
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div class="loadingDiv-parent">
+        <div class="loadingDiv">
+            <img src="./images/transparent-gif-spinner-2.gif" />
+        </div>
+    </div>
+    <!-- Spinner Ends -->
+    <div class="navbar">
+        <span>
+                    <a href="index.html"> <img src="./images/intern.jpg" alt="logo" class="logo"> </a>
+        </span>
+        <span class="links">
+            <a href="javascript:void(0);" style="font-size:25px;" class="icon " onclick="myToggle()">&#9776;</a>
+            <a href="mailto:idowu.s.adekale@gmail.com" target="_blank" class="message-btn right message">Message Me</a>
+
+            <a href="#contact" class="right no-no">Contact</a>
+            <a href="#about" class="right no-no">About</a>
+            <a href="index.html" class="active right no-no">Home</a>
+
+            <span class="topnav" id="myTopnav">
+                <a href="index.html" class=" right no-no">Home</a>
+                <a href="#about" class="right no-no">About</a>
+             <a href="#contact" class="right no-no">Contact</a>
+            </span>
+
+
+        </span>
+
+    </div>
+
+    <div class="header">
+        <h1>I am a Software Developer</h1>
+        <p>A <b>responsive</b> website created by me.</p>
+    </div>
+    <!-- <div class="glow-block">
+        <h1 class="glow">About Me</h1>
+    </div> -->
+    <div class="about-section" id="about">
+        <h1 class="glow">About Me</h1>
+        <h2 class="type">
+            <a href="#obasphere" class="typewrite" data-period="2000" data-type='["I am an Intern Software Engineer @Obasphere"]'>
+            </a>
+        </h2>
+        <p>Technical Skills: <b>Html | CSS | JavaScript | SQL | C#</b></p>
+        <a href="#obasphere" class="project-btn project-up" style=" background-color: #3d00e6; color:#f1f1f1;">@Obasphere</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h4 class="bio"> Idowu Adekale Solomon</h4>
+            <img src="./images/Me.jpg" alt="image" class="me">
+            <p> <b>Intern Software Engineering </b> dedicated to improve skills through hands-on-learning and developing adept work.</p>
+            <h3>Bio:</h3>
+            <p>Email: <a href="mailto:idowu.s.adekale@gmail.com" target="_blank" class="email"><b>idowu.s.adekale@gmail.com</b></a></p>
+            <p>Contact <b>+2348144976215</b> | <b>+2348102702511</b></p>
+            <p>Address: <b>Lagos, Nigeria.</b></p>
+            <br>
+            <h3>Professional Summary:</h3>
+            <p>
+                <li class="fmt">Seeking an opportunity to utilize skills in developing software for an established company with a strong customer base.</li>
+                <br>
+                <li class="fmt">Demonstrated excellent skills in HTML, CSS, JAVASCRIPT, SQL and C#.</li>
+                <br>
+                <li class="fmt">Having accurate abilities in communicating, Analyzing and Adapting methods to produce code with Smooth functionings.</li>
+            </p>
+        </div>
+        <div class="main">
+
+            <video autoplay loop id="myVideo">
+                <source src="./images/new2.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+
+            <div class="content">
+                <h1>Web Developer</h1>
+                <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique
+                    delicatissimi pro.</p>
+                <button id="myBtn" onclick="myPlay()">Pause</button>
+            </div>
+
+        </div>
+    </div>
+
+    <h2> <span class="prj">Project</span>
+        <!-- <hr><span> <button class="project-git"><a href="https://github.com/idowuadekale" target="_blank">GitHub Page</a></button></span> -->
+        <hr> <a href="https://github.com/idowuadekale" target="_blank" class="project-btn project-up">Github</a>
+
+    </h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="./images/game.png" alt="Game" style="width:100%">
+                <div class="container">
+                    <h2>Games</h2>
+                    <p class="title">Pure JavaScript | Css | Html</p>
+                    <p>
+                        <li>Space Invader1</li>
+                        <br>
+                        <li>Space Invader2</li>
+                    </p>
+                    <p>Check it out on my Github page!</p>
+                    <p><button class="button">Github</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./images/record.png" alt="Record" style="width:100%">
+                <div class="container">
+                    <h2>Record Saver's</h2>
+                    <p class="title">HTML | CSS | JAVASCRIPT</p>
+                    <p>
+                        <li>To-do App</li>
+                        <br>
+                        <li>To-do List</li>
+                        <br>
+                        <li>Expense Manager</li>
+                    </p>
+                    <p>Check it out on the link!</p>
+                    <p><button class="button">Github</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./images/LoanI.png" alt="Loan" class="loan-img">
+                <div class="container">
+                    <h2>Calculator</h2>
+                    <p class="title">Pure JavaScript | Css | Html</p>
+                    <p>
+                        <li>Loan Calculator</li>
+                        <br>
+                        <li>Responsive Calculator</li>
+                    </p>
+                    <p>Including many others.</p>
+                    <p><button class="button">Github</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clarity Section -->
+    <div class="obasphere" style="background-color:#f1f1f1" id="obasphere">
+        <div class="sphere">
+            <div class="column-33">
+                <img src="./images/clarity.jpg" alt="App" width="335" height="471" class="img">
+            </div>
+            <div class="column-66">
+                <h1 class="xlarge-font"><b>Obasphere</b></h1>
+                <h1 class="large-font" style="color:red;"><b>Product, what?</b></h1>
+                <p><span style="font-size:24px">Obasphere is an Innovative Enterprise Solutions for your business.</span> <br> Obasphere provide digital solutions to assist you save costs and increase revenue.</p>
+                <button class="oba"><a href="https://obasphere.com" target="_blank">Get Started</a></button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="contact" class="container-contact">
+        <hr>
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Don't leave without saying a word, or leaving a message:</p>
+        </div>
+        <div class="row-contact">
+            <div class="column">
+                <img src="./images/map.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <form action="https://www.w3schools.com/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                <option value="nigeria">Nigeria</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">United State of America</option>
+                <option value="uk">UK</option>
+                <option value="dublin">Dublin</option>
+              </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    <input type="submit" value="Submit" target="_blank">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myNewBtn" title="Go to top"> Ï </button>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+    <!-- Alternative Js -->
+    <script src="jquery.min.js"></script>
+    <!-- Main Js -->
+    <script src="main.js"></script>
+
+</html>
