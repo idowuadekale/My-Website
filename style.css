@@ -145,14 +145,15 @@
     
     .navbar {
         overflow: hidden;
-        background-color: #333;
+        background-color: rgb(46, 8, 184);
         position: sticky;
         position: -webkit-sticky;
         top: 0;
     }
     
-    .logo {
-        width: 80%;
+    .logo img {
+        width: 55%;
+        height: 3%;
     }
     
     @media screen and (max-width: 700px) {
@@ -190,7 +191,7 @@
     /* Active/current link */
     
     .navbar a.active {
-        background-color: #666;
+        background-color: #3d00e69a;
         color: white;
     }
     /* Column container */
@@ -206,9 +207,10 @@
     /* Editting Bio */
     
     .bio {
-        font-size: 25px;
-        margin-top: -2px;
-        margin-left: 50px;
+        text-align: center;
+        font-size: 28px;
+        display: block;
+        margin-top: -15px;
     }
     
     .me {
@@ -233,7 +235,7 @@
     }
     
     .loan-img {
-        width: 99.8%;
+        width: 68%;
     }
     
     .type {
@@ -286,7 +288,7 @@
     }
     
     .oba:hover {
-        background-color: #44196d;
+        background-color: #3d00e6;
         cursor: pointer;
     }
     
@@ -334,6 +336,23 @@
         border: 2px solid rgb(4, 35, 65);
     }
     
+    .oba-btn {
+        border-radius: 4px;
+        padding: 9px 9px;
+        font-size: 20px;
+        background-color: #3d00e6;
+        color: white;
+        display: inline-block;
+        border: 2px solid #fff;
+        text-decoration: none;
+    }
+    
+    .oba-btn:hover {
+        background-color: #fff;
+        color: #3d00e6;
+        border: 2px solid #3d00e6;
+    }
+    
     .message-btn {
         border-radius: 4px;
         padding: 7px 25px 8px 25px;
@@ -341,11 +360,11 @@
         transition: 0.3s;
         font-size: 14px;
         display: inline-block;
-        border: 2px solid cadetblue;
+        border: 2px solid #3d00e6;
     }
     
     .navbar .links .message:hover {
-        background-color: gray;
+        background-color: #3d00e69a;
         color: #fff;
     }
     
@@ -399,6 +418,10 @@
         padding: 20px;
         text-align: center;
         background: #ddd;
+    }
+    
+    .footer img {
+        width: 10%;
     }
     /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
     
@@ -541,7 +564,7 @@
             position: absolute;
             display: block;
             right: 130px;
-            top: -10px;
+            top: 9px;
         }
         .navbar .links .topnav {
             visibility: visible;
@@ -597,4 +620,70 @@
     
     #myNewBtn:hover {
         background-color: rgb(46, 8, 184);
+    }
+    
+    #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+        font-size: 17px;
+    }
+    
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+    
+    @-webkit-keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+    
+    @-webkit-keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+    
+    @keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
     }

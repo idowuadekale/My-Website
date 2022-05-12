@@ -106,3 +106,9 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+function mySnack() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function() { x.className = x.className.replace("show", ""); }, 3000);
+}

@@ -23,11 +23,11 @@
     </div>
     <!-- Spinner Ends -->
     <div class="navbar">
-        <span>
-                    <a href="index.html"> <img src="./images/intern.jpg" alt="logo" class="logo"> </a>
+        <span class="logo">
+                    <a href="index.html"> <img src="./images/wi.jpg" alt="logo"> </a>
         </span>
         <span class="links">
-            <a href="javascript:void(0);" style="font-size:25px;" class="icon " onclick="myToggle()">&#9776;</a>
+            <a style="font-size:25px;" class="icon " onclick="myToggle()">&#9776;</a>
             <a href="mailto:idowu.s.adekale@gmail.com" target="_blank" class="message-btn right message">Message Me</a>
 
             <a href="#contact" class="right no-no">Contact</a>
@@ -59,12 +59,12 @@
             </a>
         </h2>
         <p>Technical Skills: <b>Html | CSS | JavaScript | SQL | C#</b></p>
-        <a href="#obasphere" class="project-btn project-up" style=" background-color: #3d00e6; color:#f1f1f1;">@Obasphere</a>
+        <a href="#obasphere" class="oba-btn">@Obasphere</a>
     </div>
-
+    <!-- style=" background-color: #3d00e6; color:#f1f1f1;" -->
     <div class="row">
 
-        <div class="main">
+        <div class="side">
 
             <video autoplay loop id="myVideo">
                 <source src="./images/Futuristic - 896.mp4" type="video/mp4">
@@ -79,11 +79,10 @@
             </div>
 
         </div>
-        <div class="side">
-            <h4 class="bio"> Idowu Adekale Solomon</h4>
+        <div class="main">
+            <h3 class="bio">Profile</h3>
             <img src="./images/Me.jpg" alt="image" class="me">
-            <p> <b>Intern Software Engineering </b> dedicated to improve skills through hands-on-learning and developing adept work.</p>
-            <h3>Bio:</h3>
+            <p> <b>My name is Idowu Adekale Solomon. I am a Software Engineering dedicated to improve skills through hands-on-learning and developing adept work.</b> </p>
             <p>Email: <a href="mailto:idowu.s.adekale@gmail.com" target="_blank" class="email"><b>idowu.s.adekale@gmail.com</b></a></p>
             <p>Contact <b>+2348144976215</b> | <b>+2348102702511</b></p>
             <p>Address: <b>Lagos, Nigeria.</b></p>
@@ -174,6 +173,8 @@
         </div>
     </div>
     <br>
+    <button onclick="mySnack()">Show Snackbar</button>
+    <div id="snackbar">Some text some message..</div>
     <br>
     <div id="contact" class="container-contact">
         <hr>
@@ -211,6 +212,7 @@
     <button onclick="topFunction()" id="myNewBtn" title="Go to top"> Ï </button>
 
     <div class="footer">
+        <a href="index.html"> <img src="./images/footer.jpg" alt="logo"> </a>
         <h2>Footer</h2>
     </div>
 
