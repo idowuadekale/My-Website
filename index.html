@@ -22,6 +22,7 @@
         </div>
     </div>
     <!-- Spinner Ends -->
+    <div id="snackbar">Check out more of my code... <br> Click the link to my GitHub Page!</div>
     <div class="navbar">
         <span class="logo">
                     <a href="index.html"> <img src="./images/wi.jpg" alt="logo"> </a>
@@ -63,24 +64,10 @@
     </div>
     <!-- style=" background-color: #3d00e6; color:#f1f1f1;" -->
     <div class="row">
-
-        <div class="side">
-
-            <video autoplay loop id="myVideo">
-                <source src="./images/Futuristic - 896.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-              </video>
-
-            <div class="content">
-                <h1>Web Developer</h1>
-                <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique
-                    delicatissimi pro.</p>
-                <button id="myBtn" onclick="myPlay()">Pause</button>
-            </div>
-
-        </div>
         <div class="main">
-            <h3 class="bio">Profile</h3>
+            <div class="about-section bio-section">
+                <h1 class="glow bio">Profile</h1>
+            </div>
             <img src="./images/Me.jpg" alt="image" class="me">
             <p> <b>My name is Idowu Adekale Solomon. I am a Software Engineering dedicated to improve skills through hands-on-learning and developing adept work.</b> </p>
             <p>Email: <a href="mailto:idowu.s.adekale@gmail.com" target="_blank" class="email"><b>idowu.s.adekale@gmail.com</b></a></p>
@@ -97,30 +84,31 @@
             </p>
         </div>
     </div>
+    <div class="about-section bio-section">
+        <h1 class="glow bio">Text</h1>
+    </div>
+    <div class="side">
+        <video autoplay loop id="myVideo">
+                <source src="./images/Futuristic - 896.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
 
-    <h2> <span class="prj">Project</span>
-        <!-- <hr><span> <button class="project-git"><a href="https://github.com/idowuadekale" target="_blank">GitHub Page</a></button></span> -->
-        <hr> <a href="https://github.com/idowuadekale" target="_blank" class="project-btn project-up">Github</a>
-
-    </h2>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="./images/game.png" alt="Game" style="width:100%">
-                <div class="container">
-                    <h2>Games</h2>
-                    <p class="title">Pure JavaScript | Css | Html</p>
-                    <p>
-                        <li>Space Invader1</li>
-                        <br>
-                        <li>Space Invader2</li>
-                    </p>
-                    <p>Check it out on my Github page!</p>
-                    <p><button class="button">Github</button></p>
-                </div>
-            </div>
+        <div class="content">
+            <h1>Software Engineer</h1>
+            <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique
+                delicatissimi pro.</p>
+            <button id="myBtn" onclick="myPlay()">Pause</button>
         </div>
 
+    </div>
+
+
+
+    <div class="about-section bio-section">
+        <h1 class="glow bio">Project</h1>
+        <a href="https://github.com/idowuadekale" target="_blank" class="project-btn project-up">Github</a>
+    </div>
+    <div class="row">
         <div class="column">
             <div class="card">
                 <img src="./images/record.png" alt="Record" style="width:100%">
@@ -135,10 +123,28 @@
                         <li>Expense Manager</li>
                     </p>
                     <p>Check it out on the link!</p>
-                    <p><button class="button">Github</button></p>
+                    <p> <button class="button" onclick="mySnack()">Click Me 😆</button> </p>
                 </div>
             </div>
         </div>
+
+        <div class="column">
+            <div class="card">
+                <img id="my-Img" src="./images/game.png" alt="You can Check all my codes on my github page ❤ <br> Isn't it lovely ☻" style="width:100%">
+                <div class="container">
+                    <h2>Games</h2>
+                    <p class="title">Pure JavaScript | Css | Html</p>
+                    <p>
+                        <li>Space Invader1</li>
+                        <br>
+                        <li>Space Invader2</li>
+                    </p>
+                    <p>Check it out on my Github page!</p>
+                    <p> <button class="button" onclick="mySnack()">Click Me 😂</button> </p>
+                </div>
+            </div>
+        </div>
+
 
         <div class="column">
             <div class="card">
@@ -152,7 +158,7 @@
                         <li>Responsive Calculator</li>
                     </p>
                     <p>Including many others.</p>
-                    <p><button class="button">Github</button></p>
+                    <p> <button class="button" onclick="mySnack()">Click Me 😁</button> </p>
                 </div>
             </div>
         </div>
@@ -173,13 +179,13 @@
         </div>
     </div>
     <br>
-    <button onclick="mySnack()">Show Snackbar</button>
-    <div id="snackbar">Some text some message..</div>
     <br>
     <div id="contact" class="container-contact">
         <hr>
         <div style="text-align:center">
-            <h2>Contact Us</h2>
+            <div class="about-section bio-section">
+                <h1 class="glow bio">Contact Me</h1>
+            </div>
             <p>Don't leave without saying a word, or leaving a message:</p>
         </div>
         <div class="row-contact">
@@ -208,12 +214,18 @@
             </div>
         </div>
     </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img-01">
+        <div id="caption"></div>
+    </div>
 
-    <button onclick="topFunction()" id="myNewBtn" title="Go to top"> Ï </button>
+    <button onclick="topFunction()" id="myNewBtn" title="Go to top">⬆</button>
 
     <div class="footer">
         <a href="index.html"> <img src="./images/footer.jpg" alt="logo"> </a>
-        <h2>Footer</h2>
+        <h4>© 2022 | All Rights Reserved</h4>
     </div>
 
     <!-- Alternative Js -->
