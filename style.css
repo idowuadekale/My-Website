@@ -217,8 +217,8 @@
     }
     
     .me {
-        margin-left: 80px;
-        margin-top: -25px;
+        margin-left: 200px;
+        /* margin-top: -25px; */
     }
     
     .email {
@@ -699,7 +699,7 @@
     }
     
     #my-Img:hover {
-        opacity: 0.7;
+        opacity: 0.8;
     }
     /* The Modal (background) */
     
