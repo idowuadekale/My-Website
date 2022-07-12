@@ -221,6 +221,10 @@
         /* margin-top: -25px; */
     }
     
+    .column-33 h4 {
+        margin: 20px 40px;
+    }
+    
     .email {
         color: #1abc9c;
         border-bottom: 1px solid #333;
